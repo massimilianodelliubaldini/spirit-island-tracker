@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<title>Spirit Island Tracker</title>
+		<script src="./scripts/app.js"></script>
+	</head>
+	<body style="background-size: cover; background-image: url(./images/bg.png);">
+		<div id="tracker">
+			<div class="row">
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('energy', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/energy.png">
+					</div>
+					<div class="one-third">
+						<span id="energy" class="text count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('energy', (i) => { return ++i; })">+</button>
+				</div>
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('fear', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/fear.png">
+					</div>
+					<div class="one-third">
+						<span id="fear" class="text count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('fear', (i) => { return ++i; })">+</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('sun', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/sun.png">
+					</div>
+					<div class="one-third">
+						<span id="sun" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('sun', (i) => { return ++i; })">+</button>
+				</div>
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('moon', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/moon.png">
+					</div>
+					<div class="one-third">
+						<span id="moon" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('moon', (i) => { return ++i; })">+</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('fire', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/fire.png">
+					</div>
+					<div class="one-third">
+						<span id="fire" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('fire', (i) => { return ++i; })">+</button>
+				</div>
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('air', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/air.png">
+					</div>
+					<div class="one-third">
+						<span id="air" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('air', (i) => { return ++i; })">+</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('water', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/water.png">
+					</div>
+					<div class="one-third">
+						<span id="water" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('water', (i) => { return ++i; })">+</button>
+				</div>
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('rock', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/rock.png">
+					</div>
+					<div class="one-third">
+						<span id="rock" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('rock', (i) => { return ++i; })">+</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('leaf', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/leaf.png">
+					</div>
+					<div class="one-third">
+						<span id="leaf" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('leaf', (i) => { return ++i; })">+</button>
+				</div>
+				<div class="third">
+					<button class="text increment negative" onClick="updateById('beast', (i) => { return --i; })">-</button>
+				</div>
+				<div class="third">
+					<div class="two-third">
+						<img class="image" src="./images/beast.png">
+					</div>
+					<div class="one-third">
+						<span id="beast" class="text element count">0</span>
+					</div>
+				</div>
+				<div class="third">
+					<button class="text increment positive" onClick="updateById('beast', (i) => { return ++i; })">+</button>
+				</div>
+			</div>
+			<div class="row actions">
+				<div class="third">
+					<button class="text action" onClick="updateByClass('element', (i) => { return 0; })">Reset Elements</button>
+				</div>
+				<div class="third">
+					<button class="text action" onClick="updateByClass('count', (i) => { return 0; })">Reset All</button>
+				</div>
+				<div class="third">
+					<button class="text action" onClick="updateById('fear', (i) => { return i + 10; })">+10 Fear</button>
+				</div>
+				<div class="third">
+					<button class="text action" onClick="updateById('fear', (i) => { return i - 10; })">-10 Fear</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
